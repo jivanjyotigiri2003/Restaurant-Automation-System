@@ -1,0 +1,98 @@
+/* navbar.css */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 5%; /* Use percentage-based padding */
+    background-color: #9ACD32;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    position: fixed;
+    width: 100vw; /* Viewport width */
+    max-width: 100%; /* Prevent horizontal overflow */
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    box-sizing: border-box; /* Include padding in width calculation */
+  }
+  
+  .nav-section1 {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  .logo {
+    height: 40px;
+    width: auto;
+    border-radius: 50%;
+  }
+  
+  .nav-page {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #2c3e50;
+    text-decoration: none;
+  }
+  
+  .nav-section2 {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .nav-section2 li {
+    position: relative;
+  }
+  
+  .nav-section2 a {
+    text-decoration: none;
+    color: #34495e;
+    font-weight: 500;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-section2 a:hover {
+    color: #3498db;
+  }
+  
+  .nav-section2 a.active {
+    color: #3498db;
+    font-weight: 600;
+  }
+  
+  .navbar-btn {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 0.5rem 1.5rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-weight: 500;
+  }
+  
+  .navbar-btn:hover {
+    background-color: #2980b9;
+  }
+  
+  
+  /* Active link indicator */
+  .nav-section2 li a::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #3498db;
+    transition: width 0.3s ease;
+  }
+  
+  .nav-section2 li a:hover::after,
+  .nav-section2 li a.active::after {
+    width: 100%;
+  }

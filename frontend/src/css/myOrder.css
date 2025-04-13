@@ -1,0 +1,200 @@
+
+.orderpg {
+  margin-top: 15%;
+  margin-bottom: 10%;
+}
+
+.order-page {
+  display: flex;
+  justify-content: center; 
+  align-items: flex-start;
+  margin-top: 20px;
+}
+
+.order-summary {
+  margin-top: 100px;
+  padding: 20px;
+  border: 2px solid #ccc;
+  width: 50%;
+  box-shadow: 10px 12px 16px 17px rgba(111, 110, 110, 0.717);
+  border-radius: 8px;
+  margin-left: 20%;
+  background-color:#21B6A8;
+}
+
+
+.order-summary h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+
+.orders-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.orders-table th, .orders-table td {
+  border: 1px solid #ccc;
+  padding: 8px;
+  text-align: left;
+  color:black;
+}
+
+.orders-table th {
+  background-color: #f0f0f0;
+}
+
+
+.generate-bill {
+  margin-top: 5%;
+  flex: 0 0 300px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  width: 50%;
+  box-shadow: 10px 12px 16px 17px rgba(111, 110, 110, 0.717);
+  border-radius: 8px;
+  margin-left: 20%;
+  background-color:#21B6A8;
+}
+
+
+.my-meals {
+  margin-bottom: 20px;
+}
+
+.my-meals h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+
+.pay-btn {
+  background-color: #0E86D4;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.pay-btn:hover {
+  background-color: #16e6f9;
+}
+
+.v-dish_list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); 
+  gap: 20px; 
+  padding: 20px;
+}
+
+.myorder-dish {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 15px;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  background-color: #ffffff;
+  transition: transform 0.2s ease;
+}
+
+.myorder-dish:hover {
+  transform: translateY(-5px);
+}
+
+.myorder-dish-img {
+  width: 100%;
+  height: 200px;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  object-fit: cover;
+}
+
+.myorder-desc {
+  text-align: center;
+}
+
+.myorder-dish-name, .myorder-dish-rate, .myorder-dish-rating {
+  margin: 5px 0;
+}
+
+.myorder-rating-pic {
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+}
+
+.myorder-shop {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+  gap: 20px; /* Add this line */
+}
+
+.myorder-dish-count {
+  font-size: 16px;
+  margin-right: 10px;
+  background-color: #57f079;
+  border: 2px solid gray;
+  padding:2px;
+}
+
+.myorder-shop-btn button {
+  background-color: #27da51;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 5px 10px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.myorder-shop-btn button:hover {
+  background-color: #218838;
+}
+
+.image-gallery {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  padding: 20px;
+}
+
+.image-item {
+  flex: 1;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.image-item img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.image-item:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.invoice-img{
+  width:300px;
+  height: 300px;
+  box-shadow: 4px 4px gray;
+}
+
+.ordersearch {
+  padding: 5px;
+  color: black;
+}
+
+.dropdown{
+  padding:5px;
+}
